@@ -3,6 +3,8 @@ import classes from './MainHeader.module.css';
 
 const MainHeader = (props) => {
   return (
+    <>
+    {props.message && <div>{props.message}</div>} 
     <header className={classes.header}>
       <h1>ReduxCart</h1>
       <nav>
@@ -13,6 +15,7 @@ const MainHeader = (props) => {
         </ul>
       </nav>
     </header>
+    </> 
   );
 };
 
